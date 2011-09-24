@@ -28,6 +28,7 @@ set number      "add line numbers
 set showbreak=...
 set wrap linebreak nolist
 
+
 "mapping for command key to map navigation thru display lines instead
 "of just numbered lines
 vmap <D-j> gj
@@ -260,7 +261,7 @@ else
 
     "set railscasts colorscheme when running vim in gnome terminal
     if $COLORTERM == 'gnome-terminal'
-        set term=gnome-256color
+        "set term=gnome-256color problem with arrow keys on vim
         colorscheme railscasts
     else
         colorscheme default
